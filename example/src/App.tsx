@@ -1,12 +1,14 @@
 import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'test-rn-library';
+import { multiply, sayHello } from 'test-rn-library';
 
-const result = multiply(3, 7);
+const result = multiply(3, 8);
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>
+        Result: {result} {sayHello()}
+      </Text>
     </View>
   );
 }
