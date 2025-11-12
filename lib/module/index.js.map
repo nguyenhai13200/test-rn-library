@@ -1,0 +1,1 @@
+{"version":3,"names":["TestRnLibrary","multiply","a","b","sayHello"],"sourceRoot":"../../src","sources":["index.tsx"],"mappings":";;AAAA,OAAOA,aAAa,MAAM,0BAAuB;AAEjD,OAAO,SAASC,QAAQA,CAACC,CAAS,EAAEC,CAAS,EAAU;EACrD,OAAOH,aAAa,CAACC,QAAQ,CAACC,CAAC,EAAEC,CAAC,CAAC;AACrC;AAEA,OAAO,SAASC,QAAQA,CAAA,EAAW;EACjC,OAAOJ,aAAa,CAACI,QAAQ,CAAC,CAAC;AACjC","ignoreList":[]}
