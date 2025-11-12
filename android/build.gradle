@@ -67,11 +67,21 @@ android {
 repositories {
   mavenCentral()
   google()
+  // Local Maven repo containing AARs with JSC built for Android
+  flatDir {
+      dirs 'libs'
+  }
 }
+
 
 def kotlin_version = getExtOrDefault("kotlinVersion")
 
 dependencies {
   implementation "com.facebook.react:react-android"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+  // Import the AAR library
+  // implementation(name: 'MyLibrary-release', ext: 'aar')
+  api fileTree(dir: 'libs', include: ['*.aar'])
+  // api files('libs/MyLibrary-release.aar')
 }
